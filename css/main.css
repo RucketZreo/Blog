@@ -9,7 +9,7 @@ body {
   background: #ffe;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin: 100px auto 0;
-  max-width: 400px;
+  max-width: 600px;
   min-height: 300px;
   padding: 130px;
   position: relative;
@@ -117,7 +117,7 @@ h3 {
 .highlight, blockquote {
   margin: 40px 0px;
   padding: 0px 20px;
-  border-left-style: solid;
+  border-left-style: none;
 }
 
 /* footer */

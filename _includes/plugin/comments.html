@@ -1,0 +1,6 @@
+{% case site.plugin.comments.provider %}
+
+{% when "duoshuo" %}
+  {% include plugin/comments-providers/duoshuo %}
+{% when "disqus" %}
+  {% include plugin/comments-providers/disqus %}

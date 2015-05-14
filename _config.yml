@@ -10,3 +10,10 @@ github_username:  RubyOctocat
 
 # Build settings
 markdown: kramdown
+
+comments :
+    provider : duoshuo
+    duoshuo :
+      short_name : come
+    disqus :
+      short_name : jekyllbootstrap
