@@ -1,11 +1,4 @@
-## WorkFlow
+## [Ruby Octocat Organization Blog](rucketzreo.github.io/blog/)
 
-
-###### ```WorkFlow``` 是一个以规范多人协作项目以及学习Git Flow为目的Base on [Wiki]()的项目
-
-
-###### Git是一个非常之流行的分布式版本控制器之一
-
-###### Octoplus的特性、会让没有规范流程的branch混乱不堪
-
-###### 此项目采用了`gh-pages`分之以讨论的形式来了解`Github`以及使用`Git`的各种tips
+This is blog's copyright for Ruby Octocat Organization.<br/>
+This is blog will be record team daily and welcome to comments or [add issues](https://github.com/RucketZreo/Blog/issues/new) to help us improve blog articles

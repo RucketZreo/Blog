@@ -1,0 +1,24 @@
+<div class="loading-wrapper">
+  <div class="loading"></div>
+</div>
+<div class="header">
+    <h1>
+        <a style="color: rgba(192, 23, 23, 0.86);" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </h1>
+    <p class="sub">
+        The world has many magics,<br/>
+        Don't be afraid and Not be worrɪd,<br/>
+        Just shaking your hands.<br/>
+        And <a class='underline' href=''>JOIN US</a>, Then show each guy !<br/>
+        "Logic is the beginning of wisdom not the end."<br/>
+    </p>
+    <div class="menu">
+        <ul class="navlist">
+            {% for link in site.links %}
+            <li>
+                <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

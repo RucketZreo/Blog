@@ -1,0 +1,100 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+//colors
+$whiteish:#FFEDDB;
+$pink:#E96F92;
+$purple:#75517D;
+$green:#54fad4;
+
+//options
+$duration:0.8s;
+$ease-in-out:cubic-bezier(0.445, 0.050, 0.550, 0.950);
+$ease-in:cubic-bezier(0.470, 0.000, 0.745, 0.715);
+$ease-out: cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+$size:20px;
+$hsize:$size/2;
+
+body{
+  background:$whiteish;
+}
+.title{
+  font-family:"Montserrat";
+  color:$purple;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  text-align:center;
+  font-weight:700;
+  font-size:20px;
+  margin-top:50px;
+  text-shadow:$whiteish 1px 1px,$whiteish -1px -1px,$whiteish -1px 1px,$whiteish 1px -1px,$pink 2px 2px;
+}
+.square{
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    width:$size;
+    height:$size;
+    transform:rotate(-45deg);
+}
+@keyframes part-anim{
+  0%{
+    transform:translate3d(-$hsize,-$hsize,0);
+  }
+  100%{
+    transform:translate3d($hsize,$hsize,0);
+  }
+}
+.square-part{
+    position:absolute;
+    width:$size;
+    height:$size;
+    z-index: 1;
+    animation:part-anim $duration $ease-in-out infinite alternate;
+}
+.square-green{
+    background:$green;
+    right:0;
+    bottom:0;
+    animation-direction:alternate-reverse;
+}
+.square-pink{
+    background:$pink;
+    left:0;
+    top:0;
+
+}
+@keyframes blend-anim{
+  0%{
+    transform:scale(0.01,0.01) rotateY(0);
+    animation-timing-function:$ease-in;
+  }
+  50%{
+    transform:scale(1,1) rotateY(0);
+    animation-timing-function:$ease-out;
+  }
+  100%{
+    transform:scale(0.01,0.01) rotateY(0);
+  }
+}
+.square-blend{
+    background:$purple;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 2;
+    animation:blend-anim $duration ease-in infinite;
+}
+
+.extra{
+  font-family:Montserrat;
+  color:$pink;
+  text-align:center;
+}
+a{
+  color:inherit;
+  text-shadow:1px 1px $green;
+}
